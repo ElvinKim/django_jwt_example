@@ -1,6 +1,7 @@
 from django.conf.urls  import url
-from .views import *
+from members.views import *
+
 
 urlpatterns = [
-    url(r'^$', ),
+    url(r'^$', MemberListAPIView.as_view(), name='member_list'),
 ]
